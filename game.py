@@ -77,7 +77,19 @@ class Monster(pygame.sprite.Sprite):
     def update(self):
         """Update the monster"""
         pass
-    
+
+
+#Create a player group and object
+my_player_group = pygame.sprite.Group()
+my_player = Player()
+my_player_group.add(my_player)
+
+#Create monster group, adding monsters will occur in game class'
+#start new round method
+my_monster_group = pygame.sprite.Group()
+
+#Create game object
+my_game = Game()
 
 #Main game loop
 running = True
